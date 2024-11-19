@@ -3,7 +3,7 @@
 ## 👥 Integrantes
 
 
-- [![Leonardo Urbantzky]https://github.com/LeonardoUrbantzky
+- [![Bernardo Rode](https://github.com/LeonardoUrbantzky.png?size=80)](https://github.com/LeonardoUrbantzky)
   *Leonardo Urbantzky*
 
 ---
