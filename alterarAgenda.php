@@ -14,11 +14,11 @@ if (isset($_GET["editar"])) {
 
 //processa aletaração
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["senha"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
     $novoNome = $_POST["nome"];
     $novoFone = $_POST["fone"];
     alterarAgenda($index, $novoNome, $novoFone);
-    header("location: index.php");
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -36,8 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["senha"])) {
     <h1>Alterar Agenda</h1>
     </header>
     <form method="POST">
-        <input type="text" name="usuario" value="<?php echo htmlspecialchars($nomeAtual);?>" required>
-        <input type="password" name="senha" value="<?php echo htmlspecialchars($foneAtual);?>" required>
+        <input type="text" name="nome" value="<?php echo htmlspecialchars($nomeAtual);?>" required>
+        <input type="number" name="fone" value="<?php echo htmlspecialchars($foneAtual);?>" required>
         <button type="submit">Salvar altereção</button>
     </form>
 </body>

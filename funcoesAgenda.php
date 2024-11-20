@@ -63,9 +63,9 @@ function excluirAgenda($index)
 
 function alterarAgenda($index, $novoNome, $novoFone)
 {
-    $agenda = carregarUsuarios();
-    if (isset($usuario[$index])) {
-        $usuario[$index] = ["nome" => $novoNome, "fone" => $novoFone];
+    $agenda = carregarAgenda();
+    if (isset($agenda[$index])) {
+        $agenda[$index] = ["nome" => $novoNome, "fone" => $novoFone];
         file_put_contents("agenda.txt", "");
         foreach ($agenda as $user) {
             salvarAgenda($user["nome"], $user["fone"]);
